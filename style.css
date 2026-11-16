@@ -1,0 +1,200 @@
+
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Main area */
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+/* Form layout */
+#note-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+#note-form label {
+    font-weight: bold;
+}
+
+#note-input {
+    flex: 1;
+    min-width: 180px;
+}
+
+#note-input,
+#note-category,
+#search-input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Buttons */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+/* Search input */
+#search-input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Note count */
+#note-count {
+    margin-bottom: 15px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Notes list */
+#notes-list {
+    list-style: none;
+}
+
+/* Individual note cards */
+#notes-list li {
+    background-color: #ffffff;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-left: 5px solid #2563eb;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+/* Category styles */
+.category-personal {
+    border-left-color: #0d9488 !important;
+}
+
+.category-work {
+    border-left-color: #991b1b !important;
+}
+
+.category-study {
+    border-left-color: #2563eb !important;
+}
+
+/* Category labels */
+.category-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 9px;
+    border-radius: 12px;
+    background-color: #e5e7eb;
+    margin: 8px 0;
+}
+
+/* Error message */
+#error-message {
+    color: red;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    #note-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #note-form label {
+        margin-bottom: -8px;
+    }
+
+    #note-input,
+    #note-category,
+    #note-form button {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
